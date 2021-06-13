@@ -7,15 +7,15 @@ container.addEventListener("click", handleRemove);
 function handleSubmit(e) {
   e.preventDefault();
 
-  // grab values from form
+  // form values
   let imageUrl = e.target.image.value;
   let textAbove = e.target.text_above.value;
   let textBelow = e.target.text_below.value;
 
-  // add new card for meme
+  // new meme card
   addMeme(imageUrl, textAbove, textBelow);
 
-  // reset our form
+  // reset form
   e.target.reset();
 }
 
